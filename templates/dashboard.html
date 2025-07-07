@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Kidnap Alert AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <header class="bg-blue-700 text-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Kidnap Alert AI Dashboard</h1>
+      <nav class="space-x-4">
+        <a href="/" class="hover:text-yellow-300">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-semibold mb-4">Zone Monitoring Overview</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-bold">Total Reports</h3>
+        <p class="text-3xl mt-2 text-blue-700">142</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-bold">High-Risk Zones</h3>
+        <p class="text-3xl mt-2 text-red-600">5</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="text-xl font-bold">Alerts Sent</h3>
+        <p class="text-3xl mt-2 text-green-600">320</p>
+      </div>
+    </div>
+
+    <div class="mt-10 bg-white p-6 rounded shadow">
+      <h3 class="text-xl font-bold mb-4">Recent Incidents</h3>
+      <table class="min-w-full table-auto text-left">
+        <thead>
+          <tr>
+            <th class="px-4 py-2">Location</th>
+            <th class="px-4 py-2">Date</th>
+            <th class="px-4 py-2">Severity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border px-4 py-2">Anambra Central</td>
+            <td class="border px-4 py-2">2025-07-01</td>
+            <td class="border px-4 py-2 text-red-600">High</td>
+          </tr>
+          <tr>
+            <td class="border px-4 py-2">Enugu East</td>
+            <td class="border px-4 py-2">2025-06-29</td>
+            <td class="border px-4 py-2 text-yellow-500">Medium</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
