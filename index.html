@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kidnapping Risk Checker</title>
+  <script defer src="/static/script.js"></script>
+  <style>
+    body { font-family: Arial; padding: 2rem; }
+    input, select, button { margin: 0.5rem; padding: 0.5rem; }
+  </style>
+</head>
+<body>
+  <h1>Check Kidnapping Risk Level</h1>
+  <label>Incidents:</label>
+  <input type="number" id="incidents" /><br>
+
+  <label>Last 30 Days Reports:</label>
+  <input type="number" id="last30" /><br>
+
+  <label>Police Presence:</label>
+  <select id="police">
+    <option value="0">High</option>
+    <option value="1">Medium</option>
+    <option value="2">Low</option>
+  </select><br>
+
+  <button onclick="checkRisk()">Check Risk</button>
+  <h2 id="output"></h2>
+</body>
+</html>
